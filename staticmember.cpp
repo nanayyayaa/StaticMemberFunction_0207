@@ -12,4 +12,20 @@ public:
     //deklarasi prosedur setID() dan printAll()
     void setID();
     void printAll();
+
+    //pembuatan constructor Mahasiswa dengan parameter pnama
+    Mahasiswa(string pnama) :nama(pnama) {
+        setID();
+    }
 };
+
+//memberi value ke variabel nim dari class mahasiswa
+int Mahasiswa::nim = 10;
+
+//mengimplementasikan prosedur - prosedur di luar class
+void Mahasiswa::setID() {
+    id = ++nim;
+};
+
+void Mahasiswa::printAll(){
+}
